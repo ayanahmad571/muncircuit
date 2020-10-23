@@ -1,0 +1,10 @@
+<?php
+echo 'Hello i am ayan';
+if(1 == 1){
+	echo '1';
+}
+$conn = new MySQLi('localhost','root','','muncircuit');
+
+$sql = $conn->query("select 1,2,3,4,5,6,7 from dual");
+var_dump($sql->fetch_assoc());
+?>
